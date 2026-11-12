@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>REVCAST | Revenue Intelligence</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <aside class="sidebar">
+
+            <div class="brand">
+
+                <div class="brand-logo">
+                    R
+                </div>
+
+                <div class="brand-text">
+
+                    <h2>REVCAST</h2>
+
+                    <span>Revenue Intelligence</span>
+
+                </div>
+
+            </div>
+
+            <nav class="navigation">
+
+                <a
+                    href="#overview"
+                    class="nav-item active"
+                >
+                    <span>◉</span>
+                    <span class="nav-text">Overview</span>
+                </a>
+
+                <a
+                    href="#forecast"
+                    class="nav-item"
+                >
+                    <span>◈</span>
+                    <span class="nav-text">Forecast</span>
+                </a>
+
+                <a
+                    href="#scenarios"
+                    class="nav-item"
+                >
+                    <span>◆</span>
+                    <span class="nav-text">Scenarios</span>
+                </a>
+
+                <a
+                    href="#drivers"
+                    class="nav-item"
+                >
+                    <span>△</span>
+                    <span class="nav-text">Revenue Drivers</span>
+                </a>
+
+                <a
+                    href="#insights"
+                    class="nav-item"
+                >
+                    <span>✦</span>
+                    <span class="nav-text">Insights</span>
+                </a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+
+                <div class="system-status">
+
+                    <span class="status-dot"></span>
+
+                    <span>System Operational</span>
+
+                </div>
+
+                <div class="version">
+                    REVCAST v1.0
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div>
+
+                    <p class="eyebrow">
+                        AI-DRIVEN REVENUE ANALYTICS
+                    </p>
+
+                    <h1>
+                        Revenue Intelligence Dashboard
+                    </h1>
+
+                    <p class="subtitle">
+                        Probabilistic forecasting, scenario planning and revenue insights.
+                    </p>
+
+                </div>
+
+                <div class="header-status">
+
+                    <span class="status-dot"></span>
+
+                    <span>Live Forecast</span>
+
+                </div>
+
+            </header>
+
+
+            <section id="overview">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            OVERVIEW
+                        </p>
+
+                        <h2>
+                            Revenue Outlook
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="kpi-grid">
+
+                    <div class="kpi-card">
+
+                        <div class="kpi-header">
+
+                            <span>
+                                30 DAY REVENUE
+                            </span>
+
+                            <span class="kpi-icon">
+                                $
+                            </span>
+
+                        </div>
+
+                        <div
+                            class="kpi-value"
+                            id="revenue30"
+                        >
+                            Loading...
+                        </div>
+
+                        <div class="kpi-description">
+                            P50 forecast
+                        </div>
+
+                    </div>
+
+
+                    <div class="kpi-card">
+
+                        <div class="kpi-header">
+
+                            <span>
+                                60 DAY REVENUE
+                            </span>
+
+                            <span class="kpi-icon">
+                                $
+                            </span>
+
+                        </div>
+
+                        <div
+                            class="kpi-value"
+                            id="revenue60"
+                        >
+                            Loading...
+                        </div>
+
+                        <div class="kpi-description">
+                            P50 forecast
+                        </div>
+
+                    </div>
+
+
+                    <div class="kpi-card">
+
+                        <div class="kpi-header">
+
+                            <span>
+                                90 DAY REVENUE
+                            </span>
+
+                            <span class="kpi-icon">
+                                $
+                            </span>
+
+                        </div>
+
+                        <div
+                            class="kpi-value"
+                            id="revenue90"
+                        >
+                            Loading...
+                        </div>
+
+                        <div class="kpi-description">
+                            P50 forecast
+                        </div>
+
+                    </div>
+
+
+                    <div class="kpi-card">
+
+                        <div class="kpi-header">
+
+                            <span>
+                                90 DAY ROAS
+                            </span>
+
+                            <span class="kpi-icon">
+                                ↗
+                            </span>
+
+                        </div>
+
+                        <div
+                            class="kpi-value"
+                            id="roas90"
+                        >
+                            Loading...
+                        </div>
+
+                        <div class="kpi-description">
+                            Forecasted return
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section
+                id="forecast"
+                class="dashboard-section"
+            >
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            PROBABILISTIC FORECAST
+                        </p>
+
+                        <h2>
+                            Revenue Forecast
+                        </h2>
+
+                    </div>
+
+                    <div class="legend">
+
+                        <span>
+                            <i class="legend-p10"></i>
+                            P10
+                        </span>
+
+                        <span>
+                            <i class="legend-p50"></i>
+                            P50
+                        </span>
+
+                        <span>
+                            <i class="legend-p90"></i>
+                            P90
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="chart-card">
+
+                    <div
+                        id="forecastChart"
+                        class="forecast-chart"
+                    >
+                        Loading forecast...
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section
+                id="scenarios"
+                class="dashboard-section"
+            >
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            WHAT-IF ANALYSIS
+                        </p>
+
+                        <h2>
+                            Scenario Planning
+                        </h2>
+
+                        <p class="section-description">
+                            Explore how different marketing investment levels could affect revenue.
+                        </p>
+
+                    </div>
+
+
+                    <div class="scenario-control">
+
+                        <label for="scenarioSelect">
+                            Scenario
+                        </label>
+
+                        <select id="scenarioSelect">
+
+                            <option value="Conservative">
+                                Conservative
+                            </option>
+
+                            <option value="Baseline" selected>
+                                Baseline
+                            </option>
+
+                            <option value="Growth">
+                                Growth
+                            </option>
+
+                            <option value="Aggressive">
+                                Aggressive
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="scenario-grid">
+
+                    <div class="scenario-card">
+
+                        <div class="scenario-title">
+                            30 DAYS
+                        </div>
+
+                        <div
+                            class="scenario-revenue"
+                            id="scenarioRevenue30"
+                        >
+                            Loading...
+                        </div>
+
+                        <div class="scenario-row">
+
+                            <span>
+                                Spend
+                            </span>
+
+                            <strong id="scenarioSpend30">
+                                --
+                            </strong>
+
+                        </div>
+
+                        <div class="scenario-row">
+
+                            <span>
+                                ROAS
+                            </span>
+
+                            <strong id="scenarioRoas30">
+                                --
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="scenario-card">
+
+                        <div class="scenario-title">
+                            60 DAYS
+                        </div>
+
+                        <div
+                            class="scenario-revenue"
+                            id="scenarioRevenue60"
+                        >
+                            Loading...
+                        </div>
+
+                        <div class="scenario-row">
+
+                            <span>
+                                Spend
+                            </span>
+
+                            <strong id="scenarioSpend60">
+                                --
+                            </strong>
+
+                        </div>
+
+                        <div class="scenario-row">
+
+                            <span>
+                                ROAS
+                            </span>
+
+                            <strong id="scenarioRoas60">
+                                --
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="scenario-card">
+
+                        <div class="scenario-title">
+                            90 DAYS
+                        </div>
+
+                        <div
+                            class="scenario-revenue"
+                            id="scenarioRevenue90"
+                        >
+                            Loading...
+                        </div>
+
+                        <div class="scenario-row">
+
+                            <span>
+                                Spend
+                            </span>
+
+                            <strong id="scenarioSpend90">
+                                --
+                            </strong>
+
+                        </div>
+
+                        <div class="scenario-row">
+
+                            <span>
+                                ROAS
+                            </span>
+
+                            <strong id="scenarioRoas90">
+                                --
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="scenario-status"
+                    id="scenarioStatus"
+                >
+                    Loading scenarios...
+                </div>
+
+            </section>
+
+
+            <div class="two-column">
+
+                <section
+                    id="drivers"
+                    class="dashboard-section"
+                >
+
+                    <div class="section-heading">
+
+                        <div>
+
+                            <p class="section-label">
+                                MODEL EXPLAINABILITY
+                            </p>
+
+                            <h2>
+                                Top Revenue Drivers
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="drivers-card"
+                        id="driversList"
+                    >
+                        Loading drivers...
+                    </div>
+
+                </section>
+
+
+                <section
+                    id="insights"
+                    class="dashboard-section"
+                >
+
+                    <div class="section-heading">
+
+                        <div>
+
+                            <p class="section-label">
+                                AI INSIGHT LAYER
+                            </p>
+
+                            <h2>
+                                Recommended Action
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="insight-card"
+                        id="insightsCard"
+                    >
+                        Loading insights...
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <section class="dashboard-section">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            TRANSPARENCY
+                        </p>
+
+                        <h2>
+                            Forecast Assumptions
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div
+                    class="assumptions-card"
+                    id="assumptions"
+                >
+                    Loading assumptions...
+                </div>
+
+            </section>
+
+
+            <footer>
+
+                <span>
+                    REVCAST — AI-Driven Digital Revenue Analyzer
+                </span>
+
+                <span>
+                    Probabilistic Revenue Forecasting
+                </span>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>
